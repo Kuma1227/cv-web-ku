@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio website</title>
+    <link rel="shortcut icon" href="p.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=PT+Sans&family=Ubuntu+Mono&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <style>
+      /* nav{
+        position: fixed;
+      } */
+
+      #hero {
+        margin-top: 50px;
+      }
+
+      #hero .container .row .col {
+        /* background-color: aqua;
+        border: 1px solid black; */
+        padding: 15px;
+        height: 500px;
+      }
+
+      #hero .container .row .col img{
+        box-sizing: border-box;
+        width: 280px;
+       border-radius: 50px;
+      }
+
+     
+
+      /* #hero .container .row{
+        overflow: auto;
+      } */
+
+      body{
+        background-image: url(46540.jpg);
+        background-repeat: repeat-y;
+        /* background-size: cover; */
+      }
+
+      #about .container .row .col{
+        background-color: aqua;
+      }
+
+      .collapse ul li a{
+        color: white;
+      }
+
+      .collapse ul li a:hover{
+        border-bottom: 2px solid rgb(145, 145, 241);
+      }
+
+      #galery{
+        margin-top: 100px;
+      }
+
+      #topbut{
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        font-size: 22px;
+        height: 50px;
+        width: 50px;
+        background-color:#0174DF;
+        border: none;
+        color: white;
+        cursor: pointer;
+        display: none;
+        z-index: 2;
+        border-radius: 5px;
+      }
+
+      footer .row .col-sm ul li a{
+        text-decoration: none;
+        color: white;
+      }
+
+      footer .row .col-sm ul{
+        list-style: none;
+      }
+     
+
+      @media  screen and (max-width:576px){
+        #hero .container .row .col .foto{
+          width: 400px;
+          height: 450px;
+          display: none;
+        }
+
+        #hero .container .row .col h1{
+          text-align: center;
+        }
+
+        #hero .container .row .col p{
+          text-align: center;
+        }
+
+        #hero .container .row .col .tombol button{
+          margin: 0 auto;
+          display: block;
+        }
+
+       
+      }
+
+      @media  all and (max-width:400px){
+        #hero .container .row .col .foto{
+          width: 300px;
+          height: 400px;
+        }
+
+        #hero .container .row .col .tombol button{
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+        .carousel {
+            width: 950px;
+        }
+
+        @media all and (max-width: 576px) {
+             .carousel {
+                 width: 450px;
+                 
+            }
+        }
+    </style>
+
+    <script src="jquery-1.8.3.js"></script>
+    <script>
+         $(document).ready(function() {
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 40){
+            $("#topbut").fadeIn();
+          }else{
+            $("#topbut").fadeOut();
+          }
+        });
+        $("#topbut").click(function(){
+          $("html, body").animate({scrollTop : 0}, 800);
+        });
+      });
+    </script>
+   
+       
+    
+    </script>
+  </head>
+  <body>
+    <nav id="home" class="navbar navbar-expand-lg" style="background-color: #0174DF;">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#" style="color: white;">Portofolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <h1 style="margin-top: 120px; color: rgb(160, 158, 158);">Hi, Saya  <span style="color: white;"> Syaiful </span></h1>
+          <h1 style="color: rgb(160, 158, 158)"> <span style="color: white;">Front </span> end <span style="color:  #0174DF;"> Web Development </span></h1>
+          <p style="color: white;">Skill Mysql, Front-end Web developer, DataEntry, video editing, Network computer</p>
+          <div class="tombol">
+            <button type="button" class="btn btn-outline-primary mt-5 btn-lg"><a href="#about" style="color: white; text-decoration: none;">About</a></button>
+          </div>
+        </div>
+        <div class="col text-center">
+          <img class="mt-4 foto" src="IMG_20210601_125345-removebg-preview (3).png" alt="foto">
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container mt-5">
+        <div class="row text-center">
+          <div class="col-sm">
+           <h2 style="color: rgb(116, 113, 113);">About</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm">
+            <p class="para" style="color: white;">Perkenalkan, saya M.Syaifullah umur 19 tahun, kelahiran jakarta pada tanggal 27 Desember 2002. saya tertarik di bidang front end web developer, Networking serta video editing. saya lagi menempuh pendidikan Diploma di Fakultas teknik UI</p>
+          </div>
+          <div class="col-sm">
+            <p  class="para" style="color: white;">saya memiliki sifat kerja keras, teguh dan disiplin waktu. Hobi saya Gaming, Riding, Touring. dan Saya tertarik pada lowongan ini dan ingin bergabung di perusahaan ini</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact">
+      <div class="container" style="margin-top: 250px;">
+        <div class="row text-center">
+          <div class="col-sm">
+           <h2 style="color: rgb(116, 113, 113);">Contact me </h2>
+          </div>
+        </div>
+        <div class="row text-center" style="margin-top: 150px;">
+          <div class="col-sm">
+            <p style="color: white;">Email</p>
+            <span class="material-symbols-outlined" style="color: white; font-size: 50px;">
+              mail
+              </span>
+            <p style="color: white;">kriegswar27@gmail.com</p>
+          </div>
+          <div class="col-sm">
+            <p  style="color: white;">WhatsApp</p>
+            <span class="material-symbols-outlined" style="color: white; font-size: 50px;">
+              phone_iphone
+              </span>
+            <p style="color: white;">0857-7424-0867</p>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <h2>Portofolio</h2>
+      
+    </section>
+
+    <section id="galery" style="margin-top: 250px; overflow-y: hidden">
+      <div class="row text-center ">
+        <div class="col-sm">
+          <h2 style="color: rgb(116, 113, 113);">Gallery</h2>
+        </div>
+      <center>
+        <div class="containerImg" style="overflow-x: hidden; margin-top: 50px;">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="overflow-x: hidden;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000" >
+                <img src="sertifikat_page-0005.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CCNA Cisco certifikate</h5>
+                  <p>CCNA certifikate SEAMOLEC, 2021</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" >
+                <img src="sertifikat_page-0001.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CCNA Cisco certifikate</h5>
+                  <p>CCNA certifikate SEAMOLEC, 2021</p>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="sertifikat_page-0002.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CCNA Cisco certifikate</h5>
+                  <p>CCNA certifikate SEAMOLEC, 2021</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </center>
+    </section>
+
+    <footer style="margin-top: 50px; margin-left: -25px;">
+      <div class="row text-center">
+        <div class="col-sm">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#galery">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border:2px solid white;">
+      <h4 class="text-center" style="color: white;">Portofolio &copy, 2022 - <script>document.write(new Date().getFullYear())</script> </h4>
+    </footer>
+
+    <button id="topbut">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
